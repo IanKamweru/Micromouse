@@ -8,7 +8,7 @@
 
 // void setup() {
 //   Serial.begin(115200);
-//   motorShield.init();
+//   //motorShield.init();
 //   initEncoderShield();  // Initialize the encoder shield
 
 //   Serial.println("Testing Motor on Channel B");
@@ -18,16 +18,16 @@
 //   printEncoderCounts();
 //   // Half speed forward
 //   //Serial.println("Motor B 50% Forward");
-//   motorShield.setM2Speed(0);
-//   delay(1000);    
+//   //motorShield.setM2Speed(0);
+//   //delay(1000);    
   
-//   motorShield.setM2Speed(150);
-//   delay(260);
-//   printEncoderCounts();
-//   motorShield.setM2Speed(0);
+//   //motorShield.setM2Speed(150);
+//   //delay(260); // minimum pwm to start moving is 80
+//   //printEncoderCounts();
+//   //motorShield.setM2Speed(0);
 //   delay(1000);  
 
-//   while(1);
+//   //while(1);
 // }
 
 // // Function to print the current encoder counts
@@ -46,7 +46,7 @@
 #define TS 5000UL                      // sample interval (5 ms in us)
 #define RECORD_TIME 10000000UL        // total duration (10 s in us)
 #define MAX_SAMPLES 2000              // 10s / 5ms = 2000 samples max
-#define CPR 1440.0                    // encoder counts per revolution
+#define CPR 1204.0                    // encoder counts per revolution
 #define PWM_VALUE 0                // step input to apply to motor
 
 ArduinoMotorShieldR3 md; 
