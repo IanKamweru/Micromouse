@@ -35,7 +35,7 @@ void setup() {
 }
 
 void loop() {
-  Get distances from each sensor
+  // Get distances from each sensor
   int leftDistance = leftToF.getDistance();
   int frontDistance = frontToF.getDistance();
   int rightDistance = rightToF.getDistance();
